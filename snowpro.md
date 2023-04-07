@@ -112,3 +112,50 @@
 29. A deterministic query is run at 8 am, takes 5 minutes, and the results are cached. Which of the following statements are true ? 
     B. The same exact query will return the precomputed results if the underlying data hasn't changed and the results were last accessed within previous 24 hour period
     D. The 24 hour timer on the precomputed results gets renewed every time the exact query is executed 
+    
+30. Snowflake provides a mechanism for its customers to override its natural clustering algorithms. This method is : 
+    B. Clustering keys 
+
+31. True or False : A single database can exist in more than one Snowflake account. 
+    B. False 
+
+32. Which of the following are valid Snowflake Virtual Warehouse Scaling Policies ? 
+    B. Economy 
+    D. Standard 
+    
+33. Which of the following roles is recommended to be used to create and manage users and roles ? 
+    B. SECURITYADMIN 
+    
+34. True or False : Bulk unloading of data from Snowflake supports the use of a SELECT statement 
+    A. True 
+    
+35. Select the different types of Internal Stages : 
+    A. Named Stage 
+    B. User Stage 
+    C. Table Stage 
+ 
+ 36. True or False: A customer using SnowSQL / native connectors will be unable to also use the Snowflake Web Interface (UI) unless access to the UI is explicitly granted by support. 
+    B. False 
+ 
+ 37. Account-level storage usage can be monitored via: 
+    A. The Snowflake Web Interface (UI) in the Account -> Billing & Usage section 
+    
+ 38. Credit Consumption by the Compute Layer (Virtual Warehouses) is based on : (choose two) 
+    B. Warehouse size 
+    D. # of clusters for the Warehouse 
+    
+ 39. Which statement best describes `clustering` ? 
+ 
+    A. Clustering represents the way data is grouped together and stored within Snowflake's micro-partitions 
+
+ 40. True or False: The Copy command must specify a File Format in order to execute
+    B. False 
+    
+ 41. Which of the following commands sets the Virtual Warehouse for a session ? 
+    C. USE WAREHOUSE = << warehouse name >> 
+    
+ 44. Which of the following objects can be cloned ? 
+    A. Tables 
+    B. Named File Formats 
+    C. Schema 
+    E. Databases 
