@@ -1,0 +1,237 @@
+A Snowflake query took 40 minutes to run. The results indicate that ‘Bytes spilled to local storage’ was a large number.
+
+What is the issue and how can it be resolved?
+
+A. The warehouse is too large. Decrease the size of the warehouse to reduce the spillage.
+B. The warehouse is too small. Increase the size of the warehouse to reduce the spillage.
+C. The Snowflake console has timed-out. Contact Snowflake Support.
+D. The warehouse consists of a single cluster. Use a multi-cluster warehouse to reduce the spillage.
+
+Answer B 
+
+What is the MOST efficient way to load streaming data into Snowflake?
+
+A. Use the COPY command.
+B. Use Snowpipe.
+C. Use the Load Data Wizard.
+D. Use tasks and streams.
+
+Answer B 
+
+Which COPY INTO statement accurately describes how to unload data from a Snowflake table?
+
+A. The default value for the SINGLE option is set to TRUE.
+B. By default, COPY INTO statements do not separate table data into a set of output files.
+C. The OBJECT_CONSTRUCT function can be combined with the COPY command to convert the rows in a relational table to a single VARIANT column.
+D. If the COMPRESSION option is set to TRUE, a file's name can be specified with the appropriate file extension so that the output file can be compressed.
+
+Answer C 
+
+What command is used to download data from a Snowflake stage?
+
+A. PUT
+B. INSERT
+C. GET
+D. COPY
+
+Answer C 
+
+By default, which role has privileges to create tables and views in an account?
+
+A. PUBLIC
+B. SECURITYADMIN
+C. SYSADMIN
+D. USERADMIN
+
+Answer C 
+
+What does Snowflake recommend as a best practice for using secure views?
+
+A. Use sequence-generated values.
+B. Programmatically reveal the identifiers.
+C. Use secure views solely for query convenience.
+D. Do not expose the sequence-generated column(s).
+
+Answer D 
+
+What is the Fail-safe period for a transient table in the Snowflake Enterprise edition and higher?
+
+A. 0 days
+B. 1 day
+C. 7 days
+D. 14 days
+
+Answer A 
+
+How does a Snowflake user enable Multi-Factor Authentication (MFA)?
+
+A. The user must enroll themselves through the web interface.
+B. The user must submit their encrypted private key to Snowflake.
+C. The user must sign up with Duo Mobile for approval to use the service.
+D. The user must configure Snowflake to use Single Sign-On (SSO).
+
+Answer A 
+
+What allows a user to limit the number of credits consumed within a Snowflake account?
+
+A. Tracking account usage
+B. Creating resource monitors
+C. Automatic virtual warehouse scaling
+D. Automatic clustering
+
+Answer B 
+
+Which statement accurately describes Snowflake's architecture?
+
+A. It uses a local data repository for all compute nodes in the platform.
+B. It is a blend of shared-disk and shared-everything database architectures.
+C. It is a hybrid of traditional shared-disk and shared-nothing database architectures.
+D. It reorganizes loaded data into internal optimized, compressed, and row-based format.
+
+Answer C 
+
+Which Snowflake SQL command is used to get a subset of rows randomly from a table?
+
+A. GENERATOR
+B. LATERAL
+C. PIVOT
+D. SAMPLE
+
+Answer D 
+
+Which statement accurately describes how a virtual warehouse functions?
+
+A. Increasing the size of a virtual warehouse will always improve data loading performance.
+B. Each virtual warehouse is an independent compute cluster that shares compute resources with other warehouses.
+C. Each virtual warehouse is a compute cluster composed of multiple compute nodes allocated by Snowflake from a cloud provider.
+D. All virtual warehouses share the same compute resources so performance degradation of one warehouse can significantly affect all the other warehouses.
+
+Answer C 
+
+Which Snowflake object can be used to record DML changes made to a table?
+
+A. Snowpipe
+B. Stage
+C. Stream
+D. Task
+
+Answer C 
+
+Which statistic displayed in a Query Profile is specific to external functions?
+
+A. Bytes written
+B. Total invocations
+C. Partitions scanned
+D. Bytes sent over the network
+
+Answer D 
+
+If there is queueing in the virtual warehouse load monitoring chart, what should a Snowflake user do?
+
+A. Decrease the warehouse size.
+B. Decrease the MIN_CLUSTER_COUNT parameter.
+C. Change the multi-cluster settings to add additional clusters.
+D. Start a separate warehouse and move queued queries there.
+
+Answer D 
+
+Which command is used to generate a zero-copy "snapshot" of any table, schema, or database?
+
+A. ALTER
+B. CREATE ... CLONE
+C. COPY INTO
+D. CREATE REPLICATION GROUP
+
+Answer B 
+
+How long is the load history stored in the metadata of the pipe in Snowpipe?
+
+A. 2 days
+B. 7 days
+C. 14 days
+D. 64 days
+
+Answer C 
+
+What are the key characteristics of ACСOUNT_USAGE views? (Choose two.)
+
+A. There is no data latency.
+B. The data latency can vary from 45 minutes to 3 hours.
+C. The historical data is not retained.
+D. The historical data can be retained from 7 days to 6 months.
+E. Records for dropped objects are included in each view.
+
+Answer D & E 
+
+How does a scoped URL expire?
+
+A. When the data cache clears.
+B. When the persisted query result period ends.
+C. The encoded URL access is permanent.
+D. The length of time is specified in the expiration_time argument.
+
+Answer D 
+
+What are the available Snowflake scaling modes for configuring multi-cluster virtual warehouses? (Choose two.)
+
+A. Auto-Scale
+B. Economy
+C. Maximized
+D. Scale-Out
+E. Standard
+
+Answer A & C 
+
+Which loop type iterates until a condition is true?
+
+A. FOR
+B. LOOP
+C. REPEAT
+D. WHILE
+
+Answer D 
+
+Which property needs to be added to the ALTER WAREHOUSE command to verify the additional compute resources for a virtual warehouse have been fully provisioned?
+
+A. QUERY_ACCELERATION_MAX_SCALE_FACTOR
+B. RESOURCE_MONITOR
+C. SCALING_POLICY
+D. WAIT_FOR_COMPLETION
+
+Answer D 
+
+How is enhanced authentication achieved in Snowflake? (Choose two.)
+B. Snowflake-managed keys
+C. Object level access control
+D. Multi-Factor Authentication (MFA)
+E. Federated authentication and Single Sign-On (SSO)
+
+Answer D & E 
+
+What are the native data types that Snowflake provides to store semi-structured data? (Choose two.)
+
+A. ARRAY
+B. JSON
+C. ORC
+D. Parquet
+E. VARIANT
+
+Answer A & E 
+
+How long is the Fail-safe period for recovering historical data from permanent tables?
+
+A. 1 day
+B. 3 days
+C. 7 days
+D. 14 days
+
+Answer C 
+
+What does the average_overlaps in the output of SYSTEM$CLUSTERING_INFORMATION refer to?
+
+A. The average number of micro-partitions stored in Time Travel.
+B. The average number of partitions physically stored in the same location.
+C. The average number of micro-partitions which contain overlapping value ranges.
+D. The average number of micro-partitions in the table associated with cloned objects.
+
+Answer C 
