@@ -1,0 +1,36 @@
+For the ALLOWED_VALUES tag property, what is the MAXIMUM number of possible string values for a single tag?
+
+A. 10
+B. 50
+C. 64
+D. 256
+
+Answer B 
+
+Which Snowflake table type is only visible to the user who creates it, can have the same name as permanent tables in the same schema, and is dropped at the end of the session?
+
+A. Temporary
+B. Local
+C. User
+D. Transient
+
+Answer A 
+
+What is a characteristic of a role in Snowflake?
+
+A. Roles cannot be granted to other roles.
+B. System-defined roles can be dropped.
+C. Privileges granted to system roles by Snowflake can be revoked.
+D. Privileges on securable objects can be granted and revoked to a role.
+
+Answer D 
+
+What command would a user execute to load unstructured data files into a Snowflake internal stage?
+
+A. PUT
+B. GET
+C. LIST
+D. COPY INTO
+
+Answer D 
+
