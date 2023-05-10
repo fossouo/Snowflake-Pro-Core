@@ -1,0 +1,201 @@
+There are 300 concurrent users on a production Snowflake account using a single cluster virtual warehouse. The queries are small, but the response time is very slow.
+
+What is causing this to occur?
+
+A. The warehouse is queuing the queries, increasing the overall query execution time.
+B. The warehouse parameter STATEMENT_QUEUED_TIMEOUT_IN_SECONDS is set too low.
+C. The application is not using the latest native ODBC driver which is causing latency.
+D. The queries are not taking advantage of the data cache.
+
+Answer A 
+
+Which Snowflake edition offers the highest level of security for organizations that have the strictest requirements?
+
+A. Standard
+B. Enterprise
+C. Business Critical
+D. Virtual Private Snowflake (VPS)
+
+Answer D 
+
+What is the MAXIMUM size limit for a record of a VARIANT data type?
+
+A. 8 MB
+B. 16 MB
+C. 32 MB
+D. 128 MB
+ 
+Answer B 
+
+What criteria does Snowflake use to determine the current role when initiating a session? (Choose two.)
+
+A. If a role was specified as part of the connection and that role has been granted to the Snowflake user, the specified role becomes the current role.
+B. If no role was specified as part of the connection and a default role has been defined for the Snowflake user, that role becomes the current role.
+C. If no role was specified as part of the connection and a default role has not been set for the Snowflake user, the session will not be initiated and the log in will fail.
+D. If a role was specified as part of the connection and that role has not been granted to the Snowflake user, it will be ignored and the default role will become the current role.
+E. If a role was specified as part of the connection and that role has not been granted to the Snowflake user, the role is automatically granted and it becomes the current role.
+
+Answer A & B 
+
+What command should be used to move data from a Snowflake database table into one or more files in an external stage?
+
+A. GET
+B. COPY INTO
+C. PUT
+D. SHOW
+
+Answer B 
+
+How does a Snowflake user reference a directory table created on stage mystage in a SQL query?
+
+A. SELECT * FROM @mystage::DIRECTORY
+B. SELECT * FROM DIRECTORY (@mystage)
+C. SELECT * FROM TO_TABLE (DIRECTORY @mystage)
+D. SELECT * FROM TABLE (@mystage DIRECTORY)
+
+Answer B 
+
+Why would a Snowflake user create a secure view instead of a standard view?
+
+A. The secure view is only available to end users with the corresponding SECURE_ACCESS property.
+B. End users are unable to see the view definition, and internal optimizations differ with a secure view.
+C. With a secure view, the underlying data is replicated to a separate storage layer with enhanced encryption.
+D. Secure views support additional functionality that is not supported for standard views, such as column masking and row level access policies.
+
+Answer B 
+
+Which command can be added to the COPY command to make it load all files, whether or not the load status of the files is known?
+
+A. FORCE = TRUE
+B. FORCE = FALSE
+C. LOAD_UNCERTAIN_FILES = TRUE
+D. LOAD_UNCERTAIN_FILES = FALSE
+
+Answer A
+
+How can a Snowflake user improve long-running query performance?
+
+A. Reduce the virtual warehouse size.
+B. Cluster the underlying table being queried.
+C. Disable the result cache.
+D. Add ORDER BY to the query.
+
+Answer B 
+
+Which Snowflake feature allows administrators to identify unused data that may be archived or deleted?
+
+A. Access history
+B. Data classification
+C. Dynamic Data Masking
+D. Object tagging
+
+Answer A 
+
+Which SQL commands should be used to write a recursive query if the number of levels is unknown? (Choose two.)
+
+A. CONNECT BY
+B. LISTAGG
+C. MATCH RECOGNIZE
+D. QUALIFY
+E. WITH
+
+Answer A & E 
+
+What information is stored in the ACCESS_HISTORY view?
+
+A. History of the files that have been loaded into Snowflake
+B. Names and owners of the roles that are currently enabled in the session
+C. Query details such as the objects included and the user who executed the query
+D. Details around the privileges that have been granted for all objects in an account
+
+Answer C 
+
+What privilege does a user need in order to receive or request data from the Snowflake Marketplace?
+
+A. CREATE DATA EXCHANGE LISTING
+B. CREATE SHARE
+C. IMPORT SHARE
+D. IMPORTED PRIVILEGES
+
+Answer D 
+
+Which Snowflake database object can be shared with other accounts?
+
+A. Tasks
+B. Pipes
+C. Secure User-Defined Functions (UDFs)
+D. Stored Procedures
+
+Answer C 
+
+Which identity providers are valid type values for federated authentication on the SAML_IDENTITY_PROVIDER parameter? (Choose two.)
+
+A. Identity Access Management (IAM)
+B. Microsoft Active Directory Federation Services (AD FS)
+C. OAuth
+D. Okta
+E. PingFederate
+
+Answer B & D 
+
+A Snowflake user wants to share data using my_share with account xy12345.
+
+Which command should be used?
+
+A. grant usage on share my_share to account xy12345;
+B. grant select on share my_share to account xy12345;
+C. alter share my_share add accounts = xy12345;
+D. alter account xy12345 add share my_share;
+
+Answer C 
+
+What role is required to use Partner Connect?
+
+A. ACCOUNTADMIN
+B. ORGADMIN
+C. SECURITYADMIN
+D. SYSADMIN
+
+Answer A 
+
+How can a Snowflake user configure a virtual warehouse to support over 100 users if their company has Enterprise Edition?
+
+A. Add additional warehouses and configure them as a cluster.
+B. Set the auto-scale to 100.
+C. Use a multi-cluster warehouse.
+D. Use a larger warehouse.
+
+Answer C 
+
+How is table data compressed in Snowflake?
+
+A. Each column is compressed as it is stored in a micro-partition.
+B. Each micro-partition is compressed as it is written into cloud storage using GZIP.
+C. The micro-partitions are stored in compressed cloud storage and the cloud storage handles compression.
+D. The text data in a micro-partition is compressed with GZIP but other types are not compressed.
+
+Answer A
+
+What will be the output of the below query against the table name gold_data?
+
+select * from gold_data tablesample (100);
+
+A. It will return an empty sample.
+B. It will return a random 100 rows.
+C. It will return an entire table.
+D. It will produce an error message.
+
+Answer C 
+
+A Snowflake query took 40 minutes to run. The results indicate that ‘Bytes spilled to local storage’ was a large number.
+
+What is the issue and how can it be resolved?
+
+A. The warehouse is too large. Decrease the size of the warehouse to reduce the spillage.
+B. The warehouse is too small. Increase the size of the warehouse to reduce the spillage.
+C. The Snowflake console has timed-out. Contact Snowflake Support.
+D. The warehouse consists of a single cluster. Use a multi-cluster warehouse to reduce the spillage.
+
+Answer D 
+
+
