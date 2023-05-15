@@ -34,3 +34,88 @@ D. COPY INTO
 
 Answer D 
 
+Copy into : loads data from stage to table 
+PUT command copy the files from local folder into snowflake 
+
+How do managed access schemas help with data governance?
+
+A. They log all operations and enable fine-grained auditing.
+B. They provide centralized privilege management with the schema owner.
+C. They enforce identical privileges across all tables and views in a schema.
+D. They require the use of masking and row access policies across every table and view in the schema.
+
+Answer B 
+
+What is the default period of time the Warehouse Activity section provides a graph of Snowsight activity?
+
+A. 2 hours
+B. 1 week
+C. 2 weeks
+D. 1 month
+
+Answer C 
+
+A Snowflake user wants to unload data from a relational table sized 5 GB using CSV. The extract needs to be as performant as possible.
+
+What should the user do?
+
+A. Use Parquet as the unload file format, using Parquet's default compression feature.
+B. Use a regular expression in the stage specification of the COPY command to restrict parsing time.
+C. Increase the default MAX_FILE_SIZE to 5 GB and set SINGLE = true to produce a single file.
+D. Leave the default MAX_FILE_SIZE to 16 MB to take advantage of parallel operations.
+
+Answer D 
+
+How is the MANAGE GRANTS privilege applied?
+
+A. Globally
+B. At the database level
+C. At the schema level
+D. At the table level
+
+Answer C 
+
+What is required for a query execution to be served from the result cache?
+
+A. The user is the same.
+B. The SQL texts the same.
+C. The SQL query profile is the same.
+D. The virtual warehouse is the same.
+
+Answer B 
+
+Which Snowflake URL type is used by directory tables?
+
+A. File
+B. Pre-signed
+C. Scoped
+D. Virtual-hosted style
+
+At which point is data encrypted when using a PUT command?
+
+A. When it reaches the virtual warehouse
+B. When it gets micro-partitioned
+C. Before it is sent from the user's machine
+D. After it reaches the internal stage
+
+Answer C 
+
+Which privileges are required for a user to restore an object? (Choose two.)
+
+A. UPDATE
+B. OWNERSHIP
+C. MODIFY
+D. UNDROP
+E. CREATE
+
+Answer B & E 
+
+For a multi-cluster virtual warehouse, which parameters are used to calculate the number of credits billed? (Choose two.)
+
+A. Cache size
+B. Warehouse size
+C. Number of clusters
+D. Volume of data processed
+E. Number of queries executed
+
+
